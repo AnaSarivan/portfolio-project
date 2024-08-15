@@ -1,0 +1,116 @@
+/* rem and em do NOT depend on the html font-size in media queries!
+Instead, 1rem = 1 em = 16px */
+
+/****************************/
+/* BELOW 1180px */
+/****************************/
+
+@media (max-width: 74em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    gap: 6.4rem;
+  }
+}
+
+/****************************/
+/* BELOW 984px  */
+/****************************/
+
+@media (max-width: 61em) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid {
+    gap: 9.6rem;
+  }
+
+  .container {
+    padding: 0 6.4rem;
+  }
+}
+
+/****************************/
+/* BELOW 752px  */
+/****************************/
+@media (max-width: 47em) {
+  .grid {
+    gap: 4.8rem;
+  }
+
+  .container {
+    padding: 0 3.2rem;
+  }
+
+  .list-item {
+    gap: 1.2rem;
+  }
+}
+
+/****************************/
+/* BELOW 640px  */
+/****************************/
+@media (max-width: 40em) {
+
+  .logo {
+    height: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.6rem;
+  }
+  .heading-primary {
+    font-size: 3.2rem;
+  }
+
+  .project-content {
+    padding: 1.6rem;
+  }
+
+  .project-title {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .list {
+    flex-direction: column-reverse;
+    gap: 2.4rem;
+  }
+
+  .project-text {
+    margin-bottom: 1.2rem;
+  }
+}
+
+/****************************/
+/* BELOW 544px  */
+/****************************/
+@media (max-width: 34em) {
+    .grid-container {
+        grid-template-columns: 1fr;
+      }
+    
+      .container {
+        padding: 0 6rem;
+      }
+
+      .project-content {
+        padding: 2.4rem;
+      }
+    
+      .project-title {
+        font-size: 2.4rem;
+        margin-bottom: 2.4rem;
+      }
+
+      .list {
+        flex-direction: row;
+        gap: 2.4rem;
+      }
+
+}
+
